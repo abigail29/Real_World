@@ -1,7 +1,20 @@
 import React from 'react'
+import FormContainer from '../containers/FormContainer'
+import { Router, browserHistory, Route, IndexRoute } from 'react-router';
+import InterestShowContainer from '../containers/InterestShowContainer'
+import UserIndexContainer from '../containers/UserIndexContainer'
+
 
 export const App = (props) => {
-  return (<h1>Make It So React</h1>)
+  return (
+    <Router history={browserHistory}>
+      <div>
+        <Route path='/' component={UserIndexContainer} />
+        <Route path='/interests/new' component={FormContainer} />
+        <Route path='/interests/:id' component={InterestShowContainer} />
+      </div>
+    </Router>
+  )
 }
 
 export default App
