@@ -25,7 +25,7 @@ class UserIndexContainer extends Component {
         .then(users => {
           this.setState({ users });
         })
-      }
+    }
 
   render() {
     let mappedUsers;
