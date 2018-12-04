@@ -6,7 +6,8 @@ class InterestShowContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      interests: []
+      interests: [],
+      user: {}
     }
 
   }
@@ -26,6 +27,21 @@ class InterestShowContainer extends Component {
         .then(interests => {
           this.setState({ interests });
         })
+        fetch(`/api/v1/current_user`)
+        .then(response => {
+          if (response.ok) {
+            return response;
+            } else {
+            let errorMessage = `${response.status} (${response.statusText})`,
+              error = new Error(errorMessage);
+              throw(error);
+            }
+            })
+          .then(response => response.json())
+          .then(body => {
+            if (body !== null) {
+            this.setState({ user: body });
+          })
       }
 
   render() {

@@ -6,4 +6,9 @@ class Api::V1::UsersController < ApplicationController
     @users = User.all
     render json: @users
   end
+
+  def current_user
+    render json: current_user
+  end
+
 end
