@@ -13,7 +13,7 @@ class Api::V1::InterestsController < ApplicationController
   end
 
   def new
-
+    @interest = Interest.new
   end
 
   def create
