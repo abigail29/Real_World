@@ -27,8 +27,8 @@ class InterestShowContainer extends Component {
         .then(interests => {
           this.setState({ interests });
         })
-        fetch(`/api/v1/current_user`)
-        .then(response => {
+    fetch(`/api/v1/current_user`)
+    .then(response => {
           if (response.ok) {
             return response;
             } else {
