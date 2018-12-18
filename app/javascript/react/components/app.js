@@ -3,6 +3,7 @@ import FormContainer from '../containers/FormContainer'
 import { Router, browserHistory, Route, IndexRoute } from 'react-router';
 import InterestShowContainer from '../containers/InterestShowContainer'
 import UserIndexContainer from '../containers/UserIndexContainer'
+import ChatContainer from '../containers/ChatContainer'
 
 
 export const App = (props) => {
