@@ -43,7 +43,7 @@ class InterestShowContainer extends Component {
             this.setState({ user: body });
           })
     }
-  } 
+  }
 
   render() {
     let mappedInterests;
