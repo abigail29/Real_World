@@ -3,8 +3,12 @@ Rails.application.routes.draw do
   devise_for :users
 
   resources :interests
-  resources :users
 
+  resources :users, only: [:search] do
+    get 'search', on: :collection
+  end
+
+  
   namespace :api do
     namespace :v1 do
       resources :interests
