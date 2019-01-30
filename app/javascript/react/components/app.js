@@ -13,6 +13,8 @@ export const App = (props) => {
         <Route path='/' component={UserIndexContainer} />
         <Route path='/interests/new' component={FormContainer} />
         <Route path='/interests/:id' component={InterestShowContainer} />
+        <Route path="trips/:id/chats" component={ChatContainer} />
+
       </div>
     </Router>
   )
