@@ -7,6 +7,12 @@ class Api::V1::UsersController < ApplicationController
     render json: @users
   end
 
+  def new
+  end
+
+  def show
+  end 
+
   def current_user
     render json: current_user
   end
