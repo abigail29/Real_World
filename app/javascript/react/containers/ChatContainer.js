@@ -8,6 +8,7 @@ class ChatContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      user: null,
       messages: [],
       message: [],
       pastMessages: []
@@ -50,7 +51,7 @@ class ChatContainer extends Component {
         }
       );
     }
-    
+
       handleMessageReceipt(message) {
       this.setState({ messages: this.state.messages.concat(message) })
     }
