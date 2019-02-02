@@ -15,3 +15,15 @@
  *= require foundation_and_overrides
 
  */
+
+.body{
+  background-image: url("https://gfnc1kn6pi-flywheel.netdna-ssl.com/wp-content/uploads/2018/02/bloodhound-header.jpg")
+ }
+
+#body{
+   background-image: url("https://gfnc1kn6pi-flywheel.netdna-ssl.com/wp-content/uploads/2018/02/bloodhound-header.jpg")
+  }
+
+body{
+    background-image: url("https://gfnc1kn6pi-flywheel.netdna-ssl.com/wp-content/uploads/2018/02/bloodhound-header.jpg")
+   }
