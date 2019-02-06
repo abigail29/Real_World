@@ -57,7 +57,7 @@ class ChatContainer extends Component {
     }
 
     handleClearForm() {
-      this.setState({ message: '' })
+      this.setState({ message: ''  })
     }
 
     handleFormSubmit(event) {
@@ -67,9 +67,7 @@ class ChatContainer extends Component {
       // Send info to the receive method on the back end
       App.chatChannel.send({
        message: prepMessage,
-       user: user_info,
-       trip_id: this.props.params.id
-
+       user: user_info
       })
 
       this.handleClearForm();
