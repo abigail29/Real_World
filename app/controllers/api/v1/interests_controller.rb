@@ -16,6 +16,12 @@ class Api::V1::InterestsController < ApplicationController
     @interest = Interest.new
   end
 
+  def update
+  end
+
+  def destroy
+  end
+  
   def create
     @interest = Interest.new(interest_params)
 
